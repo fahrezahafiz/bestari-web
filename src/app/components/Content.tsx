@@ -415,11 +415,14 @@ export const Content = () => {
             <div className="flexslider">
               <div className="slider-wrap">
                 <div className="slide">
-                  <div className="row mx-auto mw-xs">
-                    <div className="col-12">
+                  <div className="row justify-content-center mx-auto mw-xs">
+                    <div className="col-auto">
                       <img
                         src="images/clients/human-initiative.png"
                         alt="Clients"
+                        style={{
+                          width: 200,
+                        }}
                       />
                     </div>
                   </div>

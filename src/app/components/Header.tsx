@@ -137,11 +137,7 @@ export const Header = () => {
                     </a>
                   </li>
                   <li className="menu-item">
-                    <a
-                      className="menu-link"
-                      href="#"
-                      // data-href="#section-agendas"
-                    >
+                    <a className="menu-link" href="#" data-href="#footer">
                       <div>Hubungi Kami</div>
                     </a>
                   </li>
