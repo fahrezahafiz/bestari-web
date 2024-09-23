@@ -72,7 +72,6 @@ export const Content = () => {
             </div>
           </div>
         </div>
-
         <div className="container">
           <div id="section-masjid" className="page-section mb-6">
             <div className="row">
