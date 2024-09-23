@@ -78,9 +78,10 @@ export const Content = () => {
             <div className="row">
               <div className="col-lg-7 text-center">
                 <img
-                  src="/demos/app-landing/images/section/iphone-watch.png"
-                  alt="NextGen Framework"
+                  src="/images/kegiatan/9.jpg"
+                  alt="Masjid"
                   data-animate="fadeInLeft"
+                  style={{ borderRadius: 25, width: 500 }}
                 />
               </div>
               <div className="col-lg-5">
@@ -136,9 +137,10 @@ export const Content = () => {
               </div>
               <div className="col-lg-7 text-center">
                 <img
-                  src="/demos/app-landing/images/section/iphone-nexus.png"
-                  alt="Stunning Graphics"
+                  src="/images/kegiatan/10.jpg"
+                  alt="Pendidikan"
                   data-animate="fadeInRight"
+                  style={{ borderRadius: 25, width: 500 }}
                 />
               </div>
             </div>
@@ -149,9 +151,10 @@ export const Content = () => {
             <div className="row">
               <div className="col-lg-7 text-center">
                 <img
-                  src="/demos/app-landing/images/section/iphone-watch.png"
-                  alt="NextGen Framework"
+                  src="/images/kegiatan/11.jpg"
+                  alt="Zakat Infaq"
                   data-animate="fadeInLeft"
+                  style={{ borderRadius: 25, width: 500 }}
                 />
               </div>
               <div className="col-lg-5">
@@ -204,34 +207,31 @@ export const Content = () => {
               </div>
               <div className="col-lg-7 text-center">
                 <img
-                  src="/demos/app-landing/images/section/iphone-nexus.png"
-                  alt="Stunning Graphics"
+                  src="/images/kegiatan/12.jpg"
+                  alt="Dakwah Kajian"
                   data-animate="fadeInRight"
+                  style={{ borderRadius: 25, width: 500 }}
                 />
               </div>
             </div>
           </div>
-        </div>
-        <div className="line" />
-        <div className="clear" />
-        <div
-          id="section-pelayanan-masyarakat"
-          className="page-section section p-0 mt-4"
-          style={{
-            background:
-              'url("/demos/app-landing/images/section/iphone-3d-bg.png") no-repeat left bottom',
-            backgroundSize: "100% auto",
-          }}
-          data-height-lg={700}
-          data-height-xs={450}
-        >
-          <div className="container">
+
+          <div className="line" />
+          <div className="clear" />
+          <div id="section-zakat-infaq" className="page-section mb-6">
             <div className="row">
-              <div className="col-lg-5 offset-lg-6">
-                <div className="mt-6 d-none d-lg-block" />
+              <div className="col-lg-7 text-center">
+                <img
+                  src="/images/kegiatan/13.jpg"
+                  alt="Pelayanan Masyarakat"
+                  data-animate="fadeInLeft"
+                  style={{ borderRadius: 25, width: 500 }}
+                />
+              </div>
+              <div className="col-lg-5">
                 <div className="mt-6 d-none d-lg-block" />
                 <img
-                  src="/images/logo-pelayanan-masyarakat.png"
+                  src="/images/logo-zakat-infaq.png"
                   alt="Image"
                   className="d-block mb-4"
                   width={64}
@@ -253,21 +253,8 @@ export const Content = () => {
               </div>
             </div>
           </div>
-          <div
-            className="video-wrap"
-            style={{ position: "absolute", height: "100%", zIndex: 1 }}
-          >
-            <div
-              className="video-overlay d-none d-lg-block"
-              style={{
-                background:
-                  'url("/demos/app-landing/images/section/iphone-3d.png") no-repeat left top',
-                backgroundSize: "auto 100%",
-              }}
-              data-animate="fadeInLeft"
-            />
-          </div>
         </div>
+
         <div className="clear" />
 
         <div id="section-about-us" className="section">
@@ -389,6 +376,7 @@ export const Content = () => {
         </div>
 
         <div className="clear" />
+
         <div
           id="section-clients"
           className="section mb-6"
@@ -431,7 +419,9 @@ export const Content = () => {
             </div>
           </div>
         </div>
+
         <div className="clear" />
+
         <div id="section-agendas" className="page-section p-0 m-0">
           <div className="container mt-5 mb-6 text-center">
             <h3

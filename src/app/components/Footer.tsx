@@ -14,10 +14,9 @@ export const Footer = () => {
                     <img
                       src="/images/logo-yayasan-bestari.png"
                       alt="BSI Logo"
-                      className="d-block mb-2"
+                      className="d-block"
                       style={{ width: 180 }}
                     />
-                    <h4>Yayasan Bestari Nurul Quran</h4>
                     <p>
                       +62 812 1389 6304
                       <br /> Kp. Sanding 1,RT 004/002, Desa Bojongnangka, Kec.

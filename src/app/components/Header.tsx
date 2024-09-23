@@ -4,9 +4,9 @@ export const Header = () => {
     <>
       <header
         id="header"
-        className="transparent-header dark"
-        data-sticky-class="not-dark"
-        data-responsive-class="not-dark"
+        className="light"
+        data-sticky-class="not-light"
+        data-responsive-class="not-light"
         data-sticky-logo-height={80}
         data-sticky-menu-padding={29}
       >
@@ -16,7 +16,7 @@ export const Header = () => {
               {/* Logo
 						============================================= */}
               <div id="logo" className="col-auto order-lg-2 me-lg-0 px-0">
-                <a href="demo-app-landing.html">
+                <a href="#" data-href="#slider">
                   <img
                     className="logo-default"
                     src="/images/logo-yayasan-bestari.png"
@@ -156,8 +156,7 @@ export const Header = () => {
         <div
           className="slider-inner"
           style={{
-            background:
-              'url("demos/app-landing/images/hero/hero.jpg") center center no-repeat',
+            background: 'url("/images/home/1.jpg") center center no-repeat',
             backgroundSize: "cover",
           }}
         >
