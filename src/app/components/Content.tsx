@@ -72,6 +72,69 @@ export const Content = () => {
             </div>
           </div>
         </div>
+
+        <div className="clear" />
+
+        <div className="slider-element boxed-slider">
+          <div className="container mt-5 mb-6 text-center">
+            <h3
+              id="section-about-us"
+              className="ls-1 fw-normal"
+              style={{ fontSize: 32, marginBottom: 10 }}
+            >
+              Tentang Kami
+            </h3>
+          </div>
+          <div className="container">
+            <div
+              id="oc-slider"
+              className="owl-carousel carousel-widget"
+              data-margin="0"
+              data-items="1"
+              data-speed="450"
+              data-loop="true"
+              data-autoplay="5000"
+            >
+              <a href="#">
+                <img src="/images/tentang-kami/2.jpg" alt="Slider" />
+              </a>
+              <a href="#">
+                <img src="/images/tentang-kami/3.jpg" alt="Slider" />
+              </a>
+              <a href="#">
+                <img src="/images/tentang-kami/4.jpg" alt="Slider" />
+              </a>
+              <a href="#">
+                <img src="/images/tentang-kami/5.jpg" alt="Slider" />
+              </a>
+            </div>
+          </div>
+          <div className="section header-stick">
+            <div className="container">
+              <div className="row align-items-end">
+                <div className="col-lg-9">
+                  <div className="heading-block border-0 mb-4">
+                    <h3>Yayasan Bestari Nurul Quran</h3>
+                  </div>
+
+                  <p className="mb-0 fs-5">
+                    Didirikan berdasarkan Akta yang dibuat di hadapan Notaris
+                    Bastriandi, SH., Mkn. di Jakarta, sejak tanggal 3 Mei 2023
+                    Akta Nomor 4.
+                    <br />
+                    Masjid At - Tauhid adalah sebuah masjid pertama yang
+                    berlokasi di Kp. Sanding 1,RT 004/002, Desa Bojongnangka,
+                    Kec. Gunung Putri, Kab. Bogor, Kode Pos 16963. Masjid ini
+                    diresmikan pada tanggal 19 Juni 2024.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="clear mb-5" />
+
         <div className="container">
           <div id="section-masjid" className="page-section mb-6">
             <div className="row">
@@ -256,7 +319,7 @@ export const Content = () => {
 
         <div className="clear" />
 
-        <div id="section-about-us" className="section">
+        <div className="section">
           <div className="container">
             <div className="heading-block mt-4 text-center">
               <h3>Pengurus Yayasan</h3>
@@ -437,7 +500,7 @@ export const Content = () => {
             data-loop="false"
             data-nav="false"
             data-pagi="true"
-            data-autoplay="5000"
+            data-autoplay="10000"
             data-items-xs={2}
             data-items-sm={2}
             data-items-md={4}
