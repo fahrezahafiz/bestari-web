@@ -1,5 +1,11 @@
+import { getArticles } from "@/sanity/queries";
+import { ArticlePreview } from "@/sanity/types";
+
 /* eslint-disable @next/next/no-img-element */
-export const Content = () => {
+export const Content = async () => {
+  const articles: ArticlePreview[] = await getArticles();
+  console.log(articles);
+
   return (
     <section id="content">
       <div className="content-wrap">
