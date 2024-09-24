@@ -3,7 +3,7 @@ import { PortableTextBlock } from "next-sanity";
 export type ArticlePreview = {
     _id: string;
     title: string;
-    body: string;
+    abstract: string;
     slug: {
         current: string;
     };
@@ -16,7 +16,7 @@ export type ArticlePreview = {
 export type Article = {
     _id: string;
     title: string;
-    body: string;
+    abstract: string;
     slug: {
         current: string;
     };

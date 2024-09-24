@@ -4,7 +4,6 @@ import { ArticlePreview } from "@/sanity/types";
 /* eslint-disable @next/next/no-img-element */
 export const Content = async () => {
   const articles: ArticlePreview[] = await getArticles();
-  console.log(articles);
 
   return (
     <section id="content">
@@ -496,7 +495,7 @@ export const Content = async () => {
               className="ls-1 fw-normal"
               style={{ fontSize: 32, marginBottom: 10 }}
             >
-              Info Agenda Terkini
+              Agenda Terkini
             </h3>
           </div>
           <div
@@ -504,7 +503,7 @@ export const Content = async () => {
             data-margin={20}
             data-center="true"
             data-loop="false"
-            data-nav="false"
+            data-nav="true"
             data-pagi="true"
             data-autoplay="10000"
             data-items-xs={2}
@@ -515,83 +514,21 @@ export const Content = async () => {
             data-stage-padding={30}
             data-lightbox="gallery"
           >
-            <div className="oc-item">
-              <a
-                data-lightbox="gallery-item"
-                href="/demos/app-landing/images/gallery/img-1.jpg"
-              >
-                <img
-                  src="/demos/app-landing/images/gallery/img-1.jpg"
-                  alt="Image 1"
-                />
-              </a>
-            </div>
-            <div className="oc-item">
-              <a
-                data-lightbox="gallery-item"
-                href="/demos/app-landing/images/gallery/img-2.jpg"
-              >
-                <img
-                  src="/demos/app-landing/images/gallery/img-2.jpg"
-                  alt="Image 2"
-                />
-              </a>
-            </div>
-            <div className="oc-item">
-              <a
-                data-lightbox="gallery-item"
-                href="/demos/app-landing/images/gallery/img-3.jpg"
-              >
-                <img
-                  src="/demos/app-landing/images/gallery/img-3.jpg"
-                  alt="Image 3"
-                />
-              </a>
-            </div>
-            <div className="oc-item">
-              <a
-                data-lightbox="gallery-item"
-                href="/demos/app-landing/images/gallery/img-4.jpg"
-              >
-                <img
-                  src="/demos/app-landing/images/gallery/img-4.jpg"
-                  alt="Image 4"
-                />
-              </a>
-            </div>
-            <div className="oc-item">
-              <a
-                data-lightbox="gallery-item"
-                href="/demos/app-landing/images/gallery/img-5.jpg"
-              >
-                <img
-                  src="/demos/app-landing/images/gallery/img-5.jpg"
-                  alt="Image 5"
-                />
-              </a>
-            </div>
-            <div className="oc-item">
-              <a
-                data-lightbox="gallery-item"
-                href="/demos/app-landing/images/gallery/img-6.jpg"
-              >
-                <img
-                  src="/demos/app-landing/images/gallery/img-6.jpg"
-                  alt="Image 5"
-                />
-              </a>
-            </div>
-            <div className="oc-item">
-              <a
-                data-lightbox="gallery-item"
-                href="/demos/app-landing/images/gallery/img-7.jpg"
-              >
-                <img
-                  src="/demos/app-landing/images/gallery/img-7.jpg"
-                  alt="Image 5"
-                />
-              </a>
-            </div>
+            {articles && articles.map(article => (
+              <div key={article.slug.current} className="oc-item">
+                <a
+                  data-lightbox="gallery-item"
+                  href={`/article/${article.slug.current}`}
+                >
+                  <img
+                    src={article.coverImage.url}
+                    alt={article.coverImage.alt ?? `${article.slug.current} cover image`}
+                  />
+                </a>
+                <h4>{article.title}</h4>
+                <p>{article.abstract}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
