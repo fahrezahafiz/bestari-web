@@ -29,12 +29,12 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Montserrat:wght@400;700&family=Merriweather&display=swap"
           rel="stylesheet"
         />
+        <script defer src="/js/functions.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* Document Title */}
         <title>Yayasan Bestari Nurul Quran</title>
       </head>
       <body className="stretched">{children}</body>
-      <script async src="/js/functions.js"></script>
     </html>
   );
 }

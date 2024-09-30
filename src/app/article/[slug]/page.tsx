@@ -88,9 +88,7 @@ const ArticlePage = async ({ params }: { params: { slug: string } }) => {
                   {/* Entry Content
 							============================================= */}
                   <div className="entry-content mt-0">
-                    <p>
-                      <PortableText value={article.content} />
-                    </p>
+                    <PortableText value={article.content} />
                     {/* Post Single - Content End */}
                     <div className="clear" />
                     {/* Post Single - Share
