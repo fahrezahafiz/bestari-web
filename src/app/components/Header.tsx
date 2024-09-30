@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 export const Header = () => {
+  
   return (
     <header
       id="header"
