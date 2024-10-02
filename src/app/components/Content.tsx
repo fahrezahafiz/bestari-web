@@ -565,7 +565,7 @@ export const Content = async () => {
                           <h3>
                             <a href={`/article/${article.slug.current}`}>
                               {article.title}
-                              <span>{article.slug.current}</span>
+                              <span>{`${new Date(article._createdAt).toLocaleDateString('id-ID')}`}</span>
                             </a>
                           </h3>
                           <a
