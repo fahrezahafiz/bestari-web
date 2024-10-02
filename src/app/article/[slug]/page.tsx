@@ -47,43 +47,21 @@ const ArticlePage = async ({ params }: { params: { slug: string } }) => {
                   <div className="entry-meta">
                     <ul>
                       <li>
-                        <i className="uil uil-schedule" /> 10th July 2021
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="uil uil-user" /> admin
-                        </a>
-                      </li>
-                      <li>
-                        <i className="uil uil-folder-open" />{" "}
-                        <a href="#">General</a>, <a href="#">Media</a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="uil uil-comments-alt" /> 43 Comments
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="uil uil-camera" />
-                        </a>
+                        <i className="uil uil-schedule" />{`${new Date(article._createdAt).toDateString()}`}
                       </li>
                     </ul>
                   </div>
                   {/* .entry-meta end */}
                   {/* Entry Image
 							============================================= */}
-                  <div className="entry-image mb-5">
-                    <a href="#">
-                      <img
-                        src={article.coverImage.url}
-                        alt={
-                          article.coverImage.alt ??
-                          `${article.slug.current} cover image`
-                        }
-                      />
-                    </a>
-                  </div>
+                  <img
+                    className="entry-image mb-5"
+                    src={article.coverImage.url}
+                    alt={
+                      article.coverImage.alt ??
+                      `${article.slug.current} cover image`
+                    }
+                  />
                   {/* .entry-image end */}
                   {/* Entry Content
 							============================================= */}
