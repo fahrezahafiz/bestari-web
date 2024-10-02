@@ -1,5 +1,3 @@
-"use client"
-
 /* eslint-disable @next/next/no-img-element */
 export const Header = () => {
   return (
@@ -122,7 +120,7 @@ export const Header = () => {
                 <li className="menu-item">
                   <a
                     className="menu-link"
-                    href="/#menu-link"
+                    href="/#clients"
                     data-href="#clients"
                   >
                     <div>Mitra</div>
