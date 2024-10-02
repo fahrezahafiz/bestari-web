@@ -120,7 +120,7 @@ export const Content = async () => {
           <div className="slider-element boxed-slider pt-0">
             <div className="container mt-5 mb-6 text-center">
               <h3
-                id="section-about-us"
+                id="about-us"
                 className="heading-block ls-1 fw-normal"
                 style={{ fontSize: 32, marginBottom: 10 }}
               >
@@ -177,8 +177,8 @@ export const Content = async () => {
 
           <div className="clear mb-5" />
 
-          <div className="container">
-            <div id="section-masjid" className="page-section mb-6">
+          <div id="activities" className="container">
+            <div id="masjid" className="page-section mb-6">
               <div className="row">
                 <div className="col-lg-7 text-center">
                   <img
@@ -215,7 +215,7 @@ export const Content = async () => {
             </div>
             <div className="line" />
             <div className="clear" />
-            <div id="section-pendidikan" className="page-section mt-5 mb-6">
+            <div id="pendidikan" className="page-section mt-5 mb-6">
               <div className="row">
                 <div className="col-lg-5">
                   <div className="mt-6 d-none d-lg-block" />
@@ -251,7 +251,7 @@ export const Content = async () => {
             </div>
             <div className="line" />
             <div className="clear" />
-            <div id="section-zakat-infaq" className="page-section mb-6">
+            <div id="zakat-infaq" className="page-section mb-6">
               <div className="row">
                 <div className="col-lg-7 text-center">
                   <img
@@ -287,7 +287,7 @@ export const Content = async () => {
             </div>
             <div className="line" />
             <div className="clear" />
-            <div id="section-dakwah-kajian" className="page-section mt-5 mb-6">
+            <div id="dakwah-kajian" className="page-section mt-5 mb-6">
               <div className="row">
                 <div className="col-lg-5">
                   <div className="mt-6 d-none d-lg-block" />
@@ -322,7 +322,7 @@ export const Content = async () => {
 
             <div className="line" />
             <div className="clear" />
-            <div id="section-zakat-infaq" className="page-section mb-6">
+            <div id="zakat-infaq" className="page-section mb-6">
               <div className="row">
                 <div className="col-lg-7 text-center">
                   <img
@@ -365,7 +365,7 @@ export const Content = async () => {
             <div className="container">
               <div className="container mt-5 mb-6 text-center">
                 <h3
-                  id="section-about-us"
+                  id="about-us"
                   className="heading-block ls-1 fw-normal"
                   style={{ fontSize: 32, marginBottom: 10 }}
                 >
@@ -488,7 +488,7 @@ export const Content = async () => {
           <div className="clear" />
 
           <div
-            id="section-clients"
+            id="clients"
             className="section mb-6"
             style={{
               backgroundColor: "#F8FAFB",
@@ -496,7 +496,7 @@ export const Content = async () => {
           >
             <div className="container mt-5 mb-6 text-center">
               <h3
-                id="section-about-us"
+                id="about-us"
                 className="heading-block ls-1 fw-normal"
                 style={{ fontSize: 32, marginBottom: 10 }}
               >
@@ -533,14 +533,14 @@ export const Content = async () => {
           <div className="clear" />
 
           <div
-            id="section-agendas"
+            id="agendas"
             className="section mb-6"
             style={{ padding: "100px 0" }}
           >
             <div className="container">
               <div className="container mt-5 mb-6 text-center">
                 <h3
-                  id="section-about-us"
+                  id="about-us"
                   className="heading-block ls-1 fw-normal"
                   style={{ fontSize: 32, marginBottom: 10 }}
                 >
@@ -582,7 +582,7 @@ export const Content = async () => {
             </div>
           </div>
 
-          {/* <div id="section-agendas" className="page-section p-0 m-0">
+          {/* <div id="agendas" className="page-section p-0 m-0">
             <div className="container mt-5 mb-6 text-center">
               <h3
                 className="ls-1 fw-normal"

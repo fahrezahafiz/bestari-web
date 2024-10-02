@@ -1,6 +1,7 @@
+"use client"
+
 /* eslint-disable @next/next/no-img-element */
 export const Header = () => {
-  
   return (
     <header
       id="header"
@@ -46,15 +47,15 @@ export const Header = () => {
                 data-offset={160}
               >
                 <li className="menu-item">
-                  <a className="menu-link" href="#" data-href="#slider">
+                  <a className="menu-link" href="/" data-href="#slider">
                     <div>Home</div>
                   </a>
                 </li>
                 <li className="menu-item">
                   <a
                     className="menu-link"
-                    href="#"
-                    data-href="#section-about-us"
+                    href="/#about-us"
+                    data-href="#about-us"
                   >
                     <div>Tentang Kami</div>
                   </a>
@@ -62,8 +63,8 @@ export const Header = () => {
                 <li className="menu-item">
                   <a
                     className="menu-link"
-                    href="#"
-                    data-href="#section-nextgen"
+                    href="/#activities"
+                    data-href="#activities"
                   >
                     <div>Kegiatan</div>
                   </a>
@@ -74,8 +75,8 @@ export const Header = () => {
                     <li className="menu-item">
                       <a
                         className="menu-link"
-                        href="#"
-                        data-href="#section-masjid"
+                        href="/#masjid"
+                        data-href="#masjid"
                       >
                         <div>Masjid</div>
                       </a>
@@ -83,8 +84,8 @@ export const Header = () => {
                     <li className="menu-item">
                       <a
                         className="menu-link"
-                        href="#"
-                        data-href="#section-pendidikan"
+                        href="/#pendidikan"
+                        data-href="#pendidikan"
                       >
                         <div>Pendidikan</div>
                       </a>
@@ -92,8 +93,8 @@ export const Header = () => {
                     <li className="menu-item">
                       <a
                         className="menu-link"
-                        href="#"
-                        data-href="#section-zakat-infaq"
+                        href="/#zakat-infaq"
+                        data-href="#zakat-infaq"
                       >
                         <div>Zakat & Infaq</div>
                       </a>
@@ -101,8 +102,8 @@ export const Header = () => {
                     <li className="menu-item">
                       <a
                         className="menu-link"
-                        href="#"
-                        data-href="#section-dakwah-kajian"
+                        href="/#dakwah-kajian"
+                        data-href="#dakwah-kajian"
                       >
                         <div>Dakwah & Kajian</div>
                       </a>
@@ -110,8 +111,8 @@ export const Header = () => {
                     <li className="menu-item">
                       <a
                         className="menu-link"
-                        href="#"
-                        data-href="#section-pelayanan-masyarakat"
+                        href="/#pelayanan-masyarakat"
+                        data-href="#pelayanan-masyarakat"
                       >
                         <div>Pelayanan Masyarakat</div>
                       </a>
@@ -121,8 +122,8 @@ export const Header = () => {
                 <li className="menu-item">
                   <a
                     className="menu-link"
-                    href="#"
-                    data-href="#section-clients"
+                    href="/#menu-link"
+                    data-href="#clients"
                   >
                     <div>Mitra</div>
                   </a>
@@ -130,14 +131,14 @@ export const Header = () => {
                 <li className="menu-item">
                   <a
                     className="menu-link"
-                    href="#"
-                    data-href="#section-agendas"
+                    href="/#agendas"
+                    data-href="#agendas"
                   >
                     <div>Agenda Terkini</div>
                   </a>
                 </li>
                 <li className="menu-item">
-                  <a className="menu-link" href="#" data-href="#footer">
+                  <a className="menu-link" href="/#footer" data-href="#footer">
                     <div>Hubungi Kami</div>
                   </a>
                 </li>
