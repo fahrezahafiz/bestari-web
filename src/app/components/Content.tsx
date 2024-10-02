@@ -322,7 +322,7 @@ export const Content = async () => {
 
             <div className="line" />
             <div className="clear" />
-            <div id="zakat-infaq" className="page-section mb-6">
+            <div id="pelayanan-masyarakat" className="page-section mb-6">
               <div className="row">
                 <div className="col-lg-7 text-center">
                   <img
@@ -565,7 +565,7 @@ export const Content = async () => {
                           <h3>
                             <a href={`/article/${article.slug.current}`}>
                               {article.title}
-                              <span>{`${new Date(article._createdAt).toLocaleDateString('id-ID')}`}</span>
+                              <span>{`${new Date(article._createdAt).toLocaleDateString("id-ID")}`}</span>
                             </a>
                           </h3>
                           <a
