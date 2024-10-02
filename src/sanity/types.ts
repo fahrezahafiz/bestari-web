@@ -28,3 +28,20 @@ export type Article = {
         url: string
     }
 }
+
+export type Activity = {
+    name: string;
+    slug: {
+        current: string;
+    };
+    icon: {
+        name: string;
+        provider: string;
+        svg: string;
+    },
+    description: string;
+    image: {
+        alt: string,
+        url: string
+    }
+}
