@@ -10,6 +10,7 @@ import "../../styles/bs-switches.css";
 import "../../styles/app-landing.css";
 import "../../styles/custom.css";
 import Footer from "@/app/components/Footer";
+import Header from "@/app/components/Header";
 
 const ArticlePage = async ({ params }: { params: { slug: string } }) => {
   console.log("slug", params.slug);
@@ -19,6 +20,7 @@ const ArticlePage = async ({ params }: { params: { slug: string } }) => {
   return (
     article && (
       <>
+        <Header />
         {/* <div>
           <img
             src={article.coverImage.url}
