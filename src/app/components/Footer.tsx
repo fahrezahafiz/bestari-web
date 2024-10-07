@@ -18,26 +18,35 @@ export const Footer = () => {
                       style={{ width: 180 }}
                     />
                     <p>
+                      <span className="fw-bold">
+                        Yayasan Bestari Nurul Quran
+                      </span>
+                      <br />
                       +62 812 1389 6304
+                      <br />
+                      yayasanbestariquran@gmail.com
                       <br /> Kp. Sanding 1,RT 004/002, Desa Bojongnangka, Kec.
                       Gunung Putri, Kab. Bogor, Kode Pos 16963
                     </p>
                     <a
-                      href="#"
+                      href="https://www.facebook.com/profile.php?id=61565802703381"
+                      target="__blank"
                       className="social-icon si-small border-0 rounded-circle text-light bg-facebook"
                     >
                       <i className="fa-brands fa-facebook-f" />
                       <i className="fa-brands fa-facebook-f" />
                     </a>
                     <a
-                      href="#"
+                      href="https://www.instagram.com/bestari.quran/"
+                      target="__blank"
                       className="social-icon si-small border-0 rounded-circle text-light bg-instagram"
                     >
                       <i className="fa-brands fa-instagram" />
                       <i className="fa-brands fa-instagram" />
                     </a>
                     <a
-                      href="#"
+                      href="https://www.youtube.com/@YayasanBestariNurulQuran"
+                      target="__blank"
                       className="social-icon si-small border-0 rounded-circle text-light bg-youtube"
                     >
                       <i className="fa-brands fa-youtube" />

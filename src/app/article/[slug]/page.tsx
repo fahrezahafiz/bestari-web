@@ -11,26 +11,19 @@ import "../../styles/app-landing.css";
 import "../../styles/custom.css";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
+import moment from "moment";
+import "moment/locale/id";
 
 const ArticlePage = async ({ params }: { params: { slug: string } }) => {
   console.log("slug", params.slug);
   const article: Article = await getArticleBySlug(params.slug);
   console.log("article", article);
+  moment.locale("id");
 
   return (
     article && (
       <>
         <Header />
-        {/* <div>
-          <img
-            src={article.coverImage.url}
-            alt={
-              article.coverImage.alt ?? `${article.slug.current} cover image`
-            }
-          />
-          <h1>{article.title}</h1>
-          <PortableText value={article.content} />
-        </div> */}
         <section id="content">
           <div className="content-wrap">
             <div className="container">
@@ -49,7 +42,10 @@ const ArticlePage = async ({ params }: { params: { slug: string } }) => {
                   <div className="entry-meta">
                     <ul>
                       <li>
-                        <i className="uil uil-schedule" />{`${new Date(article._createdAt).toDateString()}`}
+                        <i className="uil uil-schedule" />
+                        {moment(article._createdAt).format(
+                          "dddd, DD MMMM YYYY"
+                        )}
                       </li>
                     </ul>
                   </div>
@@ -58,6 +54,10 @@ const ArticlePage = async ({ params }: { params: { slug: string } }) => {
 							============================================= */}
                   <img
                     className="entry-image mb-5"
+                    style={{
+                      width: "50%",
+                      height: "auto",
+                    }} // This ensures the image fits its container
                     src={article.coverImage.url}
                     alt={
                       article.coverImage.alt ??
