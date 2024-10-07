@@ -23,13 +23,15 @@ export const Content = async () => {
               <div className="row">
                 <div className="col-lg-6 col-md-8">
                   <div className="emphasis-title">
-                    <h1 className="font-body">Yayasan Bestari Nurul Quran</h1>
+                    <h1 className="font-body fw-normal">
+                      Yayasan Bestari Nurul Quran
+                    </h1>
                     {/* <br /> */}
-                    <h4>
+                    <p className="lead">
                       bertekad untuk membangun generasi yang memiliki akhlak
                       mulia, berbudi pekerti luhur, dan mampu menjadi teladan di
                       tengah masyarakat.
-                    </h4>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -119,19 +121,19 @@ export const Content = async () => {
 
           <div className="slider-element boxed-slider pt-0">
             <div className="container mt-5 mb-6 text-center">
-              <h3
+              <h2
                 id="about-us"
-                className="heading-block ls-1 fw-normal"
-                style={{ fontSize: 32, marginBottom: 10 }}
+                style={{ fontSize: 42 }}
+                className=" heading-block font-body ls-1 fw-normal"
               >
                 Tentang Kami
-              </h3>
+              </h2>
             </div>
             <div className="container">
               <div
                 id="oc-slider"
                 className="owl-carousel carousel-widget"
-                data-margin="0"
+                data-margin="100"
                 data-items="1"
                 data-speed="450"
                 data-loop="true"
@@ -155,11 +157,16 @@ export const Content = async () => {
               <div className="container">
                 <div className="row align-items-end">
                   <div className="col-lg-9">
-                    <div className="heading-block border-0 mb-4">
-                      <h3>Yayasan Bestari Nurul Quran</h3>
+                    <div className="emphasis-title mb-4">
+                      <h2
+                        style={{ fontSize: 42 }}
+                        className="font-body ls-1 fw-normal"
+                      >
+                        Yayasan Bestari Nurul Quran
+                      </h2>
                     </div>
 
-                    <p className="mb-0 fs-5">
+                    <p style={{ color: "#777" }} className="lead">
                       Didirikan berdasarkan Akta yang dibuat di hadapan Notaris
                       Bastriandi, SH., Mkn. di Jakarta, sejak tanggal 3 Mei 2023
                       Akta Nomor 4.
@@ -241,7 +248,7 @@ export const Content = async () => {
                 </div>
                 <div className="col-lg-7 text-center">
                   <img
-                    src="/images/kegiatan/10.jpg"
+                    src="/images/kegiatan/15.jpg"
                     alt="Pendidikan"
                     data-animate="fadeInRight"
                     style={{ borderRadius: 25, width: 500 }}
@@ -364,13 +371,12 @@ export const Content = async () => {
           <div className="section">
             <div className="container">
               <div className="container mt-5 mb-6 text-center">
-                <h3
-                  id="about-us"
-                  className="heading-block ls-1 fw-normal"
-                  style={{ fontSize: 32, marginBottom: 10 }}
+                <h2
+                  style={{ fontSize: 42 }}
+                  className=" heading-block font-body ls-1 fw-normal"
                 >
                   Pengurus Yayasan
-                </h3>
+                </h2>
               </div>
               <div className="row g-5 mb-5 justify-content-center">
                 <div className="col-lg-3 col-md-6">
@@ -403,8 +409,11 @@ export const Content = async () => {
                     </div>
                     <div className="team-desc team-desc-bg">
                       <div className="team-title">
-                        <h4>Ir. Tauchid Roelianto, M.M</h4>
-                        <span>Pembina</span>
+                        <p>
+                          <strong>Ir. Tauchid Roelianto, M.M</strong>
+                          <br />
+                          Pembina
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -439,8 +448,11 @@ export const Content = async () => {
                     </div>
                     <div className="team-desc team-desc-bg">
                       <div className="team-title">
-                        <h4>Dr. Bunyamin, M. Pd</h4>
-                        <span>Pengawas</span>
+                        <p>
+                          <strong>Dr. Bunyamin, M. Pd</strong>
+                          <br />
+                          Pengawas
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -475,8 +487,11 @@ export const Content = async () => {
                     </div>
                     <div className="team-desc team-desc-bg">
                       <div className="team-title">
-                        <h4>Dr. Ir. Sintha Wahjusaputri, M. M</h4>
-                        <span>Ketua Yayasan</span>
+                        <p>
+                          <strong> Dr. Ir. Sintha Wahjusaputri, M. M</strong>
+                          <br />
+                          Ketua Yayasan
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -495,13 +510,13 @@ export const Content = async () => {
             }}
           >
             <div className="container mt-5 mb-6 text-center">
-              <h3
-                id="about-us"
-                className="heading-block ls-1 fw-normal"
-                style={{ fontSize: 32, marginBottom: 10 }}
+              <h2
+                id="clients"
+                style={{ fontSize: 42 }}
+                className=" heading-block font-body ls-1 fw-normal"
               >
                 Mitra Kami
-              </h3>
+              </h2>
             </div>
             <div
               id="slider-mitra-kami"
@@ -539,13 +554,13 @@ export const Content = async () => {
           >
             <div className="container">
               <div className="container mt-5 mb-6 text-center">
-                <h3
-                  id="about-us"
-                  className="heading-block ls-1 fw-normal"
-                  style={{ fontSize: 32, marginBottom: 10 }}
+                <h2
+                  id="agendas"
+                  style={{ fontSize: 42 }}
+                  className=" heading-block font-body ls-1 fw-normal"
                 >
                   Agenda Terkini
-                </h3>
+                </h2>
               </div>
               <div className="row grid-item">
                 {articles &&
@@ -561,13 +576,18 @@ export const Content = async () => {
                         />
                       </div>
                       <div className="col-md-2">
-                        <div className="grid-info">
-                          <h3>
-                            <a href={`/article/${article.slug.current}`}>
+                        <div>
+                          <p>
+                            <a
+                              style={{ color: "#777" }}
+                              href={`/article/${article.slug.current}`}
+                            >
                               {article.title}
-                              <span>{`${new Date(article._createdAt).toLocaleDateString("id-ID")}`}</span>
+                              <span>{`${new Date(
+                                article._createdAt
+                              ).toLocaleDateString("id-ID")}`}</span>
                             </a>
-                          </h3>
+                          </p>
                           <a
                             href={`/article/${article.slug.current}`}
                             className="more-link"
