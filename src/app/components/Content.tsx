@@ -140,20 +140,63 @@ export const Content = async () => {
                 data-autoplay="5000"
               >
                 <a href="#">
-                  <img src="/images/tentang-kami/2.jpg" alt="Slider" />
+                  <img
+                    src="/images/tentang-kami/17.jpg"
+                    alt="Slider"
+                    style={{
+                      width: "100%",
+                      height: "600px",
+                      objectFit: "cover",
+                    }}
+                  />
                 </a>
                 <a href="#">
-                  <img src="/images/tentang-kami/3.jpg" alt="Slider" />
+                  <img
+                    src="/images/tentang-kami/2.jpg"
+                    alt="Slider"
+                    style={{
+                      width: "100%",
+                      height: "600px",
+                      objectFit: "cover",
+                    }}
+                  />
                 </a>
                 <a href="#">
-                  <img src="/images/tentang-kami/4.jpg" alt="Slider" />
+                  <img
+                    src="/images/tentang-kami/3.jpg"
+                    alt="Slider"
+                    style={{
+                      width: "100%",
+                      height: "600px",
+                      objectFit: "cover",
+                    }}
+                  />
                 </a>
                 <a href="#">
-                  <img src="/images/tentang-kami/5.jpg" alt="Slider" />
+                  <img
+                    src="/images/tentang-kami/4.jpg"
+                    alt="Slider"
+                    style={{
+                      width: "100%",
+                      height: "600px",
+                      objectFit: "cover",
+                    }}
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="/images/tentang-kami/5.jpg"
+                    alt="Slider"
+                    style={{
+                      width: "100%",
+                      height: "600px",
+                      objectFit: "cover",
+                    }}
+                  />
                 </a>
               </div>
             </div>
-            <div className="section header-stick">
+            <div className="section">
               <div className="container">
                 <div className="row align-items-end">
                   <div className="col-lg-9">
@@ -564,9 +607,9 @@ export const Content = async () => {
               </div>
               <div className="row grid-item">
                 {articles &&
-                  articles.map((article) => (
+                  articles.map((article, index) => (
                     <>
-                      <div className="col-md-2 grid-image">
+                      <div className="col-md-2 grid-image" key={index}>
                         <img
                           src={article.coverImage.url}
                           alt={
