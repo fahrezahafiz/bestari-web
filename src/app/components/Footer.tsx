@@ -12,16 +12,12 @@ export const Footer = () => {
                 <div className="row">
                   <div className="col-lg-8 mb-5" style={{ color: "#888" }}>
                     <img
-                      src="/images/logo-yayasan-bestari.png"
+                      src="/images/logo-square.png"
                       alt="Logo"
                       className="d-block"
                       style={{ width: 180 }}
                     />
                     <p>
-                      <span className="fw-bold">
-                        Yayasan Bestari Nurul Quran
-                      </span>
-                      <br />
                       Bertekad untuk membangun generasi yang memiliki akhlak
                       mulia, berbudi pekerti luhur, dan mampu menjadi teladan di
                       tengah masyarakat.
