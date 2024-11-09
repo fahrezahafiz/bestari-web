@@ -72,63 +72,44 @@ export const Content = async () => {
               data-loop="true"
               data-autoplay="5000"
             >
-              <a href="#">
+              <a href="#" className="block w-full h-72">
                 <img
                   src="/images/tentang-kami/17.jpg"
                   alt="Slider"
-                  style={{
-                    width: "100%",
-                    height: "600px",
-                    objectFit: "cover",
-                  }}
+                  className="w-full h-full object-cover"
                 />
               </a>
-              <a href="#">
+              <a href="#" className="block w-full h-72">
                 <img
                   src="/images/tentang-kami/2.jpg"
                   alt="Slider"
-                  style={{
-                    width: "100%",
-                    height: "600px",
-                    objectFit: "cover",
-                  }}
+                  className="w-full h-full object-cover"
                 />
               </a>
-              <a href="#">
+              <a href="#" className="block w-full h-72">
                 <img
                   src="/images/tentang-kami/3.jpg"
                   alt="Slider"
-                  style={{
-                    width: "100%",
-                    height: "600px",
-                    objectFit: "cover",
-                  }}
+                  className="w-full h-full object-cover"
                 />
               </a>
-              <a href="#">
+              <a href="#" className="block w-full h-72">
                 <img
                   src="/images/tentang-kami/4.jpg"
                   alt="Slider"
-                  style={{
-                    width: "100%",
-                    height: "600px",
-                    objectFit: "cover",
-                  }}
+                  className="w-full h-full object-cover"
                 />
               </a>
-              <a href="#">
+              <a href="#" className="block w-full h-72">
                 <img
                   src="/images/tentang-kami/5.jpg"
                   alt="Slider"
-                  style={{
-                    width: "100%",
-                    height: "600px",
-                    objectFit: "cover",
-                  }}
+                  className="w-full h-full object-cover"
                 />
               </a>
             </div>
           </div>
+
           <div className="section">
             <div className="container">
               <div className="row align-items-end">
@@ -160,7 +141,7 @@ export const Content = async () => {
 
         <div className="clear mb-5" />
 
-        <div id="activities" className="container">
+        <div id="activities" className="container d-none d-md-block">
           <div id="masjid" className="page-section mb-6">
             <div className="row">
               <div className="col-lg-7 text-center">
@@ -339,6 +320,142 @@ export const Content = async () => {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div id="activities-mobile" className="container d-lg-none">
+          {/* Masjid Section */}
+          <div id="masjid-mobile" className="page-section mb-6 text-center">
+            <img
+              src="/images/kegiatan/9.jpg"
+              alt="Masjid"
+              style={{ borderRadius: 25, width: "100%", maxWidth: 250 }}
+            />
+            <img
+              src="/images/logo-masjid.png"
+              alt="Logo Masjid"
+              width={64}
+              className="d-block my-4 mx-auto"
+            />
+            <h2 style={{ fontSize: 32 }} className="font-body ls-1 fw-normal">
+              Masjid
+            </h2>
+            <p className="lead" style={{ color: "#777" }}>
+              bertekad menyediakan fasilitas masjid yang nyaman sebagai tempat
+              ibadah, pembelajaran, serta pengembangan karakter islami. Menyatu
+              dalam lingkungan pendidikan yang berlandaskan nilai-nilai
+              keislaman.
+            </p>
+          </div>
+
+          <div className="line" />
+
+          {/* Pendidikan Section */}
+          <div id="pendidikan-mobile" className="page-section mb-6 text-center">
+            <img
+              src="/images/kegiatan/15.jpg"
+              alt="Pendidikan"
+              style={{ borderRadius: 25, width: "100%", maxWidth: 250 }}
+            />
+            <img
+              src="/images/logo-pendidikan.png"
+              alt="Logo Pendidikan"
+              width={64}
+              className="d-block my-4 mx-auto"
+            />
+            <h2 style={{ fontSize: 32 }} className="font-body ls-1 fw-normal">
+              Pendidikan
+            </h2>
+            <p className="lead" style={{ color: "#777" }}>
+              bertekad untuk memberikan pendidikan yang berkualitas baik dan
+              program pendidikan yang terintegrasi dengan nilai-nilai keislaman
+              & pengembangan berkarakter.
+            </p>
+          </div>
+
+          <div className="line" />
+
+          {/* Zakat & Infaq Section */}
+          <div
+            id="zakat-infaq-mobile"
+            className="page-section mb-6 text-center"
+          >
+            <img
+              src="/images/kegiatan/11.jpg"
+              alt="Zakat Infaq"
+              style={{ borderRadius: 25, width: "100%", maxWidth: 250 }}
+            />
+            <img
+              src="/images/logo-zakat-infaq.png"
+              alt="Logo Zakat Infaq"
+              width={64}
+              className="d-block my-4 mx-auto"
+            />
+            <h2 style={{ fontSize: 32 }} className="font-body ls-1 fw-normal">
+              Zakat & Infaq
+            </h2>
+            <p className="lead" style={{ color: "#777" }}>
+              bertekad untuk memberi dengan hati, tumbuh dengan berkah. Melalui
+              Zakat dan Infaq, bersama-sama membangun pendidikan yang
+              berkualitas.
+            </p>
+          </div>
+
+          <div className="line" />
+
+          {/* Dakwah & Kajian Section */}
+          <div
+            id="dakwah-kajian-mobile"
+            className="page-section mb-6 text-center"
+          >
+            <img
+              src="/images/kegiatan/12.jpg"
+              alt="Dakwah Kajian"
+              style={{ borderRadius: 25, width: "100%", maxWidth: 250 }}
+            />
+            <img
+              src="/images/logo-dakwah-kajian.png"
+              alt="Logo Dakwah Kajian"
+              width={64}
+              className="d-block my-4 mx-auto"
+            />
+            <h2 style={{ fontSize: 32 }} className="font-body ls-1 fw-normal">
+              Dakwah & Kajian
+            </h2>
+            <p className="lead" style={{ color: "#777" }}>
+              bertekad untuk menggelar kajian {`ba'da`} sholat & kajian akbar
+              dengan materi kajian seperti Aqidah/Tauhid, Tafsir, Hadist, Fiqih,
+              Akhlak, Ceramah umum.
+            </p>
+          </div>
+
+          <div className="line" />
+
+          {/* Pelayanan Masyarakat Section */}
+          <div
+            id="pelayanan-masyarakat-mobile"
+            className="page-section mb-6 text-center"
+          >
+            <img
+              src="/images/kegiatan/13.jpg"
+              alt="Pelayanan Masyarakat"
+              style={{ borderRadius: 25, width: "100%", maxWidth: 250 }}
+            />
+            <img
+              src="/images/logo-zakat-infaq.png"
+              alt="Logo Pelayanan Masyarakat"
+              width={64}
+              className="d-block my-4 mx-auto"
+            />
+            <h2 style={{ fontSize: 32 }} className="font-body ls-1 fw-normal">
+              Pelayanan Masyarakat
+            </h2>
+            <p className="lead" style={{ color: "#777" }}>
+              bertekad menyediakan layanan kesehatan yang berkualitas,
+              berintegrasi dengan nilai-nilai keislaman. Bersama, kita wujudkan
+              masyarakat yang sehat jasmani dan rohani, serta berkarakter
+              unggul.
+            </p>
           </div>
         </div>
 

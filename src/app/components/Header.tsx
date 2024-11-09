@@ -58,7 +58,7 @@ export const Header = () => {
                     <div>Tentang Kami</div>
                   </a>
                 </li>
-                <li className="menu-item">
+                <li className="menu-item d-none d-md-block">
                   <a
                     className="menu-link"
                     href="/#activities"
@@ -111,6 +111,65 @@ export const Header = () => {
                         className="menu-link"
                         href="/#pelayanan-masyarakat"
                         data-href="#pelayanan-masyarakat"
+                      >
+                        <div>Pelayanan Masyarakat</div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li className="menu-item d-lg-none">
+                  <a
+                    className="menu-link"
+                    href="/#activities-mobile"
+                    data-href="#activities-mobile"
+                  >
+                    <div>Kegiatan</div>
+                  </a>
+                  <ul
+                    className="sub-menu-container"
+                    data-class="up-lg:not-dark"
+                  >
+                    <li className="menu-item">
+                      <a
+                        className="menu-link"
+                        href="/#masjid-mobile"
+                        data-href="#masjid-mobile"
+                      >
+                        <div>Masjid</div>
+                      </a>
+                    </li>
+                    <li className="menu-item">
+                      <a
+                        className="menu-link"
+                        href="/#pendidikan-mobile"
+                        data-href="#pendidikan-mobile"
+                      >
+                        <div>Pendidikan</div>
+                      </a>
+                    </li>
+                    <li className="menu-item">
+                      <a
+                        className="menu-link"
+                        href="/#zakat-infaq-mobile"
+                        data-href="#zakat-infaq-mobile"
+                      >
+                        <div>Zakat & Infaq</div>
+                      </a>
+                    </li>
+                    <li className="menu-item">
+                      <a
+                        className="menu-link"
+                        href="/#dakwah-kajian"
+                        data-href="#dakwah-kajian-mobile"
+                      >
+                        <div>Dakwah & Kajian</div>
+                      </a>
+                    </li>
+                    <li className="menu-item">
+                      <a
+                        className="menu-link"
+                        href="/#pelayanan-masyarakat-mobile"
+                        data-href="#pelayanan-masyarakat-mobile"
                       >
                         <div>Pelayanan Masyarakat</div>
                       </a>
