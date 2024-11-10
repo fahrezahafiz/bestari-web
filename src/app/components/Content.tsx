@@ -74,7 +74,7 @@ export const Content = async () => {
             >
               <a href="#" className="block w-full h-72">
                 <img
-                  src="/images/tentang-kami/17.jpg"
+                  src="/images/tentang-kami/18.png"
                   alt="Slider"
                   className="w-full h-full object-cover"
                 />
